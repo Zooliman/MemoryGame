@@ -10,13 +10,26 @@ namespace Ex02
     {
         public static void Main()
         {
+            /* int[] a = { 6, 6 };
+             int[] moveIndexes = new int[2];
+             InputValidator inputValidator = new InputValidator();
 
-            /*  MemoryGame game = new MemoryGame();
-              game.Start();*/
+             for (int i = 0; i < 10; i++)
+             {
+                 moveIndexes = inputValidator.getValidMove();
+                 Console.WriteLine(moveIndexes[0] + "," + moveIndexes[1]);
+             }*/
 
-            Board.printBoard();
+            InputValidator inputValidator = new InputValidator();
+            int[] moveIndexes = new int[2];
+            for (int i = 0; i < 10; i++)
+            {
+                moveIndexes = inputValidator.getValidBoardSize();
+                Console.WriteLine(moveIndexes[0] + "," + moveIndexes[1]);
+            }
+
             Console.ReadLine();
-            
+
         }
     }
 }

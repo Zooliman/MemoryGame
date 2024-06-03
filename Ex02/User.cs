@@ -14,5 +14,10 @@ namespace Ex02
         {
             this.m_UserName = i_UserName;
         }
+
+        public string UserName
+        {
+            get { return m_UserName; }
+        } 
     }
 }
